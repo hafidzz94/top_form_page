@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "norse-bold";
+    src: url(Norse-Bold.otf) format("opentype");
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex: 1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bg-img {
+    background-image: url(one-piece-bg.jpg);
+    width: 50vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.brand {
+    position: absolute;
+    font-family: "norse-bold";
+    height: 200px;
+    width: 100%;
+    background-color: #28832033;
+    display: flex;
+    overflow: hidden;
+    padding-left: 2rem;
+}
+.brand-text {
+    display: flex;
+    color: rgb(27, 112, 209);
+    -webkit-text-stroke-width: 2px; /* Sets the width of the outline */
+    -webkit-text-stroke-color: black; /* Sets the color of the outline */
+    position: absolute;
+    top: 50px;
+    font-size: medium;
+    
+}
+.brand-text img {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin-right: 10px;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.text-wrapper {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: antiquewhite;
+}
+p {
+    width: clamp(50%, 60%, 70%);
+    margin-left: 4rem;
+    font-weight: 600;
+    font-size: 25px;
+}
+form {
+    padding: 0 0 4rem 4rem;
+}
+.form-title {
+    margin: 2rem 0;
+}
+fieldset {
+    display: flex;
+    border: none;
+    gap: 5rem;
+    margin: 2rem 0;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+form label {
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+form input {
+    padding: 2px;
+    font-size: 16px;
+    width: 40%;
+}
+input:invalid {
+    border-color: red;
+}
+input:valid {
+    border-color: greenyellow;
+}
+button {
+  background-color: #596d48;
+  padding: 0.8rem 2.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button {
+  background-color: #596d48;
+  padding: 0.8rem 2.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+a {
+  color: #c7ad18;
+}
